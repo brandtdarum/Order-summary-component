@@ -9,29 +9,49 @@
   <title>Frontend Mentor | Order summary card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-  Order Summary
+  <main class="container-fluid d-flex justify-content-center align-items-center">
+    <article id="order-card"class="card m-2 shadow rounded">
+      <img src="./images/illustration-hero.svg" alt="Card header image" class="card-img-top">
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
+      <div class="card-body px-xxl-5">
+        <h1 class="h4 card-title text-center fw-bolder mt-3">Order Summary</h5>
+        <p class="card-text text-secondary text-center p-3">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+        <div class="card border-0 container-fluid bg-light px-4 py-2">
+          <div class="row">
+            <div class="col-2 p-0"><img src="./images/icon-music.svg" alt="Music Icon"></div>
+            <div class="col-4 p-0 ms-3">
+              <small class="fw-bolder">Annual Plan</small>
+              <small class="text-secondary">$59.99/year</small>
+            </div>
+            <div class="col ps-5 pe-0 d-flex align-items-center justify-content-end">
+              <a href="#change"><small>Change</small></a>
+            </div>
+          </div>
+        </div>
+        <div class="d-grid my-3 shadow rounded">
+          <button class="btn btn-primary btn-fluid p-3">
+            <small class="fw-bold">Proceed to Purchase</small>
+          </button>
+        </div>
+        <div class="container-fluid text-center">
+          <a href="#cancel" class="text-secondary text-center text-decoration-none"><small>Cancel Order</small></a>
+        </div>
+      </div>
+    </article>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
