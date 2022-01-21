@@ -11162,8 +11162,19 @@ main {
 #order-card {
   max-width: 333px;
 }
+#order-card #change:hover, #order-card #payment:hover {
+  opacity: 0.7;
+  transition: 0.2 ease;
+}
+#order-card #cancel:hover {
+  --bs-secondary-rgb: 0, 0, 0;
+}
 
 @media only screen and (min-width: 1400px) {
+  main {
+    background: #e0e8ff url("./images/pattern-background-desktop.svg") no-repeat top left;
+  }
+
   #order-card {
     max-width: 393px;
   }

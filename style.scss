@@ -56,9 +56,20 @@ main {
 
 #order-card {
     max-width: 333px;
+
+    #change:hover, #payment:hover{
+        opacity: 0.7;
+        transition: 0.2 ease;
+    }
+    #cancel:hover {
+        --bs-secondary-rgb: 0, 0, 0;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
+    main {
+        background: hsl(225, 100%, 94%) url("./images/pattern-background-desktop.svg") no-repeat top left;
+    }
     #order-card {
         max-width: 393px;
     }
